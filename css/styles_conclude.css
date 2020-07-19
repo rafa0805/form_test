@@ -1,0 +1,93 @@
+/* -------------------- General -------------------- */
+body {
+  margin: 0;
+  background-color: #EFF0F2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* -------------------- Common -------------------- */
+.btn {
+  margin: 48px 0 0;
+  padding: 16px;
+  float: right;
+  width: 150px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #099CEC;
+  cursor: pointer;
+  user-select: none;
+  color: #fff;
+  font-weight: bold;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* -------------------- Header / Footer -------------------- */
+header,
+footer {
+  padding : 0.5em;
+  background-color: #022044;
+  color: #fff;
+  font-weight: bold;
+}
+
+footer {
+  margin: 80px 0 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+header > p,
+footer > p {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* -------------------- body -------------------- */
+#container {
+  margin: 0 auto;
+  width: 70%;
+}
+
+#container > p {
+  margin: 80px 0 0;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid #555;
+  color: #022044;
+}
+img {
+  position: relative;
+  bottom: 16px;
+  float: right;
+  width: 40px;
+  height: auto;
+}
+
+@media screen and (max-width: 576px) {
+  img {
+    right: -48px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 896px) {
+  header > p,
+  footer > p {
+    font-size: 28px;
+    text-align: center;
+  }
+  img {
+    right: -48px;
+  }
+}
+@media screen and (min-width: 896px) {
+  header > p,
+  footer > p {
+    font-size: 28px;
+    text-align: center;
+  }
+}
+
