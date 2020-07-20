@@ -84,7 +84,7 @@ $values = $app->run();
       <p class='error_box'><?php if (isset($values['err']['tel'])) {$app->expand($values['err']['tel']); } ?></p>
       
       <p class='label req'><label for='mail_address'>7. メールアドレス (半角)</label></p>
-      <p class='input mail_address'><input name='mail_address' id='mail_address' type='text' placeholder='Max 255文字' value='<?= h($app->old($values['old'], 'mail_address')); ?>'></p>
+      <p class='input mail_address'><input name='mail_address' id='mail_address' type='text' value='<?= h($app->old($values['old'], 'mail_address')); ?>'></p>
       <p class='error_box'><?php if (isset($values['err']['mail_address'])) {$app->expand($values['err']['mail_address']); } ?></p>
       
       <p class='label req'><label for='pref'>8. 住所 (都道府県)</label></p>
